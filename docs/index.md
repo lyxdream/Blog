@@ -32,7 +32,7 @@ features:
       linkText: 开源项目
 
     - icon: 📓
-      title: 面试宝典
+      title: 实践经验
       details: 面试相关问题（面试八股文，性能优化，框架原理）
       link: https://lyxdream.github.io
       linkText: 面试宝典
