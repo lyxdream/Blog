@@ -47,7 +47,10 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
                 {
                     text: 'vitePress快速搭建个人博客',
                     link:"/note/vitePress-blog/index",
-                    items:[]
+                    items: [
+                        { text: '集成评论功能', link: '/note/vitePress-blog/comment' },
+                        { text: 'GitHub Actions实现自动部署', link: '/note/vitePress-blog/deploy' }
+                    ]
                 },
                 {
                     text: 'axios + cheerio + node-xlsx 爬取并导出到excel表格',
