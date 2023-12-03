@@ -19,7 +19,7 @@ hero:
 
 features:
 
-    - icon: 📘
+    - icon: 📖
       title: 源码阅读
       details: 了解各种库的实现原理<br />学习其中的小技巧和冷知识
       link: https://lyxdream.github.io
@@ -31,15 +31,15 @@ features:
       link: https://lyxdream.github.io
       linkText: 开源项目
 
-    - icon: 📓
+    - icon: 📘
       title: 实践经验
-      details: 面试相关问题（面试八股文，性能优化，框架原理）
+      details: 日常开发的经验及其踩过的坑
       link: https://lyxdream.github.io
-      linkText: 面试宝典
+      linkText: 实践经验
 
     - icon: 🍉
       title: 预测未来的最好方法，就是创造未来。
-      details: '<small class="bottom-small">一个乐于分享的人</small>'
+      details: '<small class="bottom-small">一个乐于分享的螺丝钉</small>'
       link: https://lyxdream.github.io
 ---
 

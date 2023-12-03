@@ -8,7 +8,17 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
             items: [
                 {
                     text: '算法',
-                    link:"/algorithm/index"
+                    link:"/algorithm/index",
+                    items:[
+                        {
+                            text: '树',
+                            link:"/algorithm/tree",
+                        },
+                        {
+                            text: '链表',
+                            link:"/algorithm/LinkedList",
+                        }
+                    ]
                 }
             ]
         }
@@ -19,13 +29,112 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
             // collapsed: false,
             link:"/fe-base/index",
             items: []
+        },
+        {
+            text:"html/css",
+            items: [
+                {
+                    text: 'css',
+                    items: [
+                        {
+                            text: 'margin折叠',
+                            link:"/fe-base/css/margin",
+                        },
+                        {
+                            text: 'css兼容问题',
+                            link:"/fe-base/css/compatible",
+                        },
+                        {
+                            text: '清除浮动',
+                            link:"/fe-base/css/clear",
+                        }
+                    ]
+                },
+                {
+                    text:"html",
+                    items:[]
+                }
+            ]
+        },
+        {
+            text: 'javascript基础',
+            link:"/fe-base/javascript/index",
+            items: [
+                {
+                    text: '数据类型',
+                    items: [
+                        {
+                            text: '数据类型',
+                            link:"/fe-base/javascript/data-type/data-type",
+                        },
+                        {
+                            text: '类型检测',
+                            link:"/fe-base/javascript//data-type/typeDetection",
+                        },
+                        {
+                            text: '类型转换',
+                            link:"/fe-base/javascript//data-type/dataConversion",
+                        }
+                    ] 
+                },
+                {
+                    text: '函数',
+                    items: [
+                        {
+                            text: '高阶函数',
+                            link:"/fe-base/javascript/function/higherFunction",
+                        },
+                        {
+                            text: '函数柯里化 和函数反柯里化',
+                            link:"/fe-base/javascript/function/currying",
+                        },
+                        {
+                            text: 'arguments的介绍',
+                            link:"/fe-base/javascript/function/arguments",
+                        }
+                    ]
+                },
+                {
+                    text: 'evnet',
+                    items: [
+                        {
+                            text: 'js中事件冒泡和事件捕获',
+                            link:"/fe-base/javascript/event/event-type",
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            text:"ES6",
+            items: [
+                {
+                    text: 'promise手写系列',
+                    link:"/fe-base/es6/promise",
+                },
+                {
+                    text: 'generator => async + await',
+                    link:"/fe-base/es6/asynchronous",
+                }
+            ]
         }
     ],
     '/source-code/': [
         {
             text: '源码阅读',
             link:"/source-code/index",
-            items:[]
+            items:[
+                {
+                    text: 'vue2',
+                    link:"/source-code/vue2/index",
+                    items:[
+                        {
+                            text: 'vue2源码解析',
+                            link:"/source-code/vue2/source",
+                        }
+                    ]
+                }
+            ]
         }
     ],
     '/open-source-projects/': [
@@ -81,13 +190,52 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         {
             text: '主流框架',
             link:"/note/framework/index"
+        },
+        {
+            text: '小程序',
+            link:"/note/mini/index",
+            items:[
+                {
+                    text: '小程序(授权)获取当前位置',
+                    link:"/note/mini/getLocation"
+                },
+                {
+                    text: 'input内容过长，失去焦点的时候，内容显示不全的',
+                    link:"/note/mini/input"
+                }, 
+                {
+                    text: '人脸采集 - 拍照上传校验',
+                    link:"/note/mini/camera"
+                }, 
+                {
+                    text: '小程序和H5互跳以及小程序跳转小程序',
+                    link:"/note/mini/h5ToMini"
+                },  
+                {
+                    text: '使用wx.openLocation遇到的坑',
+                    link:"/note/mini/openLocation"
+                }
+            ]
         }
     ],
     '/interview/': [
         {
             text: '面试宝典',
             link:"/interview/index",
-            items:[]
+            items:[
+                {
+                    text: '数据类型转换',
+                    link:"/interview/dataTypeConversion"
+                }, 
+                {
+                    text: '浏览器事件环',
+                    link:"/interview/eventRing"
+                }, 
+                 {
+                    text: '常见面试题',
+                    link:"/interview/index"
+                }
+            ],
         }
     ],
     '/my/': [
