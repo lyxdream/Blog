@@ -5,20 +5,26 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         {
             text: '计算机基础',
             link:"/computer/index",
+            collapsed: false,
             items: [
                 {
                     text: '算法',
-                    link:"/algorithm/index",
+                    link:"/computer/algorithm/index",
                     items:[
                         {
                             text: '树',
-                            link:"/algorithm/tree",
+                            link:"/computer/algorithm/tree",
                         },
                         {
                             text: '链表',
-                            link:"/algorithm/LinkedList",
+                            link:"/computer/algorithm/LinkedList",
                         }
                     ]
+                },
+                {
+                    text:"设计模式",
+                    link:"/computer/designPattern/index",
+                    items:[]
                 }
             ]
         }
@@ -32,6 +38,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         },
         {
             text:"html/css",
+            collapsed: false,
             items: [
                 {
                     text: 'css',
@@ -59,6 +66,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         {
             text: 'javascript基础',
             link:"/fe-base/javascript/index",
+            collapsed: false,
             items: [
                 {
                     text: '数据类型',
@@ -107,6 +115,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         },
         {
             text:"ES6",
+            collapsed: false,
             items: [
                 {
                     text: 'promise手写系列',
@@ -117,12 +126,19 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
                     link:"/fe-base/es6/asynchronous",
                 }
             ]
-        }
+        },
+        {
+            text: 'node',
+            collapsed: false,
+            link:"/fe-base/node/index",
+            items: []
+        },
     ],
     '/source-code/': [
         {
             text: '源码阅读',
             link:"/source-code/index",
+            collapsed: false,
             items:[
                 {
                     text: 'vue2',
@@ -148,6 +164,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         {
             text: '实践经验',
             link:"/note/index",
+            collapsed: false,
             items:[
                 {
                     text: '从零开始搭建一个个人博客',
@@ -194,6 +211,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         {
             text: '小程序',
             link:"/note/mini/index",
+            collapsed: false,
             items:[
                 {
                     text: '小程序(授权)获取当前位置',
@@ -222,6 +240,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         {
             text: '面试宝典',
             link:"/interview/index",
+            collapsed: false,
             items:[
                 {
                     text: '数据类型转换',
@@ -242,6 +261,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         {
             text: '大侠',
             link:"/my/index",
+            collapsed: false,
             items:[
                 {
                     text: '数学',
