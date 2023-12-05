@@ -4,17 +4,37 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "cz": "czg",
+    "lint:staged": "nano-staged",
+    "lint": "eslint ./docs  --ext .js,.ts,.tsx,.vue,.mjs,.cjs",
     "docs:dev": "vitepress dev docs --port=8735 --host 0.0.0.0",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "czg": "^1.7.1",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-vue": "^9.19.2",
+    "husky": "^8.0.0",
+    "nano-staged": "^0.8.0",
+    "prettier": "3.1.0",
     "sass": "^1.69.5",
     "vitepress": "1.0.0-rc.31",
     "vue": "^3.3.9"
+  },
+  "nano-staged": {
+    "*.md": "prettier --write",
+    "*.{ts,tsx,js,vue,scss}": "prettier --write",
+    "*.{ts,tsx,js,vue}": "eslint --fix"
   }
 }
